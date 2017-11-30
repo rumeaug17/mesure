@@ -4,6 +4,9 @@ little and simple benchmark tool for scala
 Usage :
 
 ```scala
+import org.agdf.mesure._
+import org.agdf.mesure.Implicits._
+
 val m1 = Mesure { code1 } named "Code 1" looping (10 times) ignoring (1 times) collect Average
 val m2 = Mesure { code2 } named "Code 2" looping (10 times) ignoring (1 times) collect FullStats
 
